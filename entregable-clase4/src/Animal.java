@@ -37,5 +37,10 @@ public abstract class Animal implements ISerVivo, IComida {
         this.genero = genero;
     }
 
+
+    public Carne conventirEnConsumo() {
+        return null;
+    }
+
     
 }

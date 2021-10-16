@@ -1,4 +1,3 @@
 public interface IComida {
-    public void consumir();
-    
+    public Carne convertirEnConsumo();
 }

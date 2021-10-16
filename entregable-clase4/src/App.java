@@ -1,6 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
         /*
             Ejercicio de Herencia e Interfaces:
             Clases:
@@ -19,7 +18,16 @@ public class App {
             Se pueden crear clases como Animal o Mamifero.
             Crear dos interfaces que tengan que ver con los metodos compartidos (polimorfismo)
         */
-
+        
+        // Crear una persona
+        Persona humano = new Persona(22, "Masculino","Vegetariano");
+        humano.caminar();
+        Tortuga tortuga = new Tortuga(100, "Femenino", "Herbíbora", 4, "Agua");
+        tortuga.caminar();
+        System.out.println("La tortuga es " + tortuga.getNutricion());
+        Carne tortugaAsada = tortuga.convertirEnConsumo();
+        tortuga = null;
+        humano.comer(tortugaAsada);
         
     }
 }

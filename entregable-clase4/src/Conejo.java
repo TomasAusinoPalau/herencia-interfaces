@@ -17,9 +17,9 @@ public class Conejo extends Animal {
         
     }
     @Override
-    public void comer() {
+    public void comer(Alimentos comida) {
         // TODO Auto-generated method stub
-        System.out.println("El conejo esta comiendo");
+        System.out.println("El conejo esta comiendo " + comida.getNombre());
         
     }
 
@@ -30,7 +30,8 @@ public class Conejo extends Animal {
     }
 
     @Override
-    public void consumir() {
-        System.out.println("El conejo esta consumiendo");
+    public Carne convertirEnConsumo() {
+        // TODO Auto-generated method stub
+        return new Carne("Conejo", 1000, 56, 30);
     }
 }

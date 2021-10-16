@@ -19,9 +19,9 @@ public class Tortuga extends Animal {
         
     }
     @Override
-    public void comer() {
+    public void comer(Alimentos comida) {
         // TODO Auto-generated method stub
-        System.out.println("La tortuga esta comiendo");
+        System.out.println("La tortuga esta comiendo " + comida.getNombre());
         
     }
 
@@ -31,7 +31,11 @@ public class Tortuga extends Animal {
         System.out.println("La tortuga hace grrr");
     }
 
-    
+    @Override
+    public Carne convertirEnConsumo() {
+        // TODO Auto-generated method stub
+        return new Carne("Tortuga", 1000, 56, 30);
+    }
     
     
 }

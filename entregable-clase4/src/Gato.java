@@ -17,9 +17,9 @@ public class Gato extends Animal {
         
     }
     @Override
-    public void comer() {
+    public void comer(Alimentos comida) {
         // TODO Auto-generated method stub
-        System.out.println("El gato esta comiendo");
+        System.out.println("El gato esta comiendo " + comida.getNombre());
         
     }
 
@@ -27,5 +27,11 @@ public class Gato extends Animal {
     public void hacerRuido() {
         // TODO Auto-generated method stub
         System.out.println("El gato hace miau");
+    }
+
+    @Override
+    public Carne convertirEnConsumo() {
+        // TODO Auto-generated method stub
+        return new Carne("Gato", 1000, 56, 30);
     }
 }
