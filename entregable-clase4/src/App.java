@@ -25,7 +25,7 @@ public class App {
         Tortuga tortuga = new Tortuga(100, "Femenino", "Herbíbora", 4, "Agua");
         tortuga.caminar();
         System.out.println("La tortuga es " + tortuga.getNutricion());
-        Carne tortugaAsada = tortuga.convertirEnConsumo();
+        Carne tortugaAsada = humano.convertirEnConsumo(tortuga);
         tortuga = null;
         humano.comer(tortugaAsada);
         

@@ -59,10 +59,9 @@ public class Persona implements ISerVivo  {
         System.out.println("El humano esta comiendo " + comida.getNombre());
     }
 
-    @Override
-    public Carne convertirEnConsumo() {
+    public Carne convertirEnConsumo(Animal animal) {
         // TODO Auto-generated method stub
-        return null;
+        return new Carne(animal.getClass().getName(), 100, 1500, 50);
     }
 
 }

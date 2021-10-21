@@ -31,7 +31,6 @@ public class Tortuga extends Animal {
         System.out.println("La tortuga hace grrr");
     }
 
-    @Override
     public Carne convertirEnConsumo() {
         // TODO Auto-generated method stub
         return new Carne("Tortuga", 1000, 56, 30);

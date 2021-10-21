@@ -29,7 +29,6 @@ public class Conejo extends Animal {
         System.out.println("El conejo no hace ruido");
     }
 
-    @Override
     public Carne convertirEnConsumo() {
         // TODO Auto-generated method stub
         return new Carne("Conejo", 1000, 56, 30);

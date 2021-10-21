@@ -39,7 +39,7 @@ public abstract class Animal implements ISerVivo, IComida {
 
 
     public Carne conventirEnConsumo() {
-        return null;
+        return this.conventirEnConsumo();
     }
 
     

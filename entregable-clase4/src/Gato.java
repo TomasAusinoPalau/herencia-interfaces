@@ -29,7 +29,6 @@ public class Gato extends Animal {
         System.out.println("El gato hace miau");
     }
 
-    @Override
     public Carne convertirEnConsumo() {
         // TODO Auto-generated method stub
         return new Carne("Gato", 1000, 56, 30);
